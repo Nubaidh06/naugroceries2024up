@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Reset  default styles */
+* {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+/* Body styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navigation {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;  
+    padding: 20px;
+    background-color: #fff; 
+    border-bottom: 1px solid #ddd;
+}
+
+/* Logo styles */
+.logo {
+    display: flex;  /* Flexbox for logo */
+    align-items: center; 
+    text-decoration: none; 
+    color: #000; 
+    font-size: 1.4rem;  
+    font-weight: 600;  
+}
+
+/* Header logo image styles */
+.header-logo {
+    width: 40px; 
+    height: auto;  
+    margin-right: 10px;  
+}
+
+/* Menu styles */
+.menu {
+    display: flex;  /* Flexbox for menu */
+    list-style: none; 
+}
+
+.menu li {
+    margin: 0 10px; 
+}
+
+/* Menu link styles */
+.menu li a {
+    text-decoration: none;  
+    color: green;  
+    font-weight: 500; 
+    transition: color 0.3s;  
+}
+
+.menu li a:hover {
+    color: darkgreen;  
+}
+
+/* Right navigation (cart) styles */
+.right-nav {
+    display: flex; 
+    gap: 15px;
+}
+
+/* Right navigation links */
+.right-nav a {
+    width: 40px; 
+    height: 40px;  
+    display: flex;  /* Flexbox for centering icon */
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;  /* Circle shape */
+    position: relative;
+    background-color: aliceblue;  /* Background color */
+    color: inherit;  /* Inherit text color */
+}
+
+/* Cart icon color */
+.cart {
+    color: greenyellow;  /* Greenyellow color */
+}
+
+/* Notification badge on cart */
+.right-nav a span {
+    position: absolute;  
+    top: -7px;  
+    right: -7px;  
+    width: 20px;  
+    height: 20px;  
+    display: flex;  /* Flexbox for centering text */
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: red; 
+    color: #fff;  
+    font-size: 0.6rem;  
+}
+
+/* Hide the menu toggle checkbox */
+#menu-toggle {
+    display: none;  /* Hide checkbox */
+}
+
+/* Menu toggle button (hamburger icon) */
+.menu-icon {
+    display: none; 
+    font-size: 1.5rem;
+    cursor: pointer; 
+}
+
+/* Media Queries */
+
+/* For tablets and mobile devices */
+@media (max-width: 768px) {
+    .menu {
+        display: none; 
+        flex-direction: column;  
+        width: 100%;  /* Full width */
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        background-color: #fff;  
+        border-top: 1px solid #ddd;  
+        z-index: 1000;  /* Bring to front */
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: flex;  /* Show menu when checked */
+    }
+
+    .menu-icon {
+        display: block;  
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .right-nav {
+        display: none;  
+    }
+
+    .navigation {
+        padding: 10px 20px;  /* Adjust padding */
+        flex-wrap: wrap;  
+    }
+
+    .logo {
+        font-size: 1.2rem;  
+    }
+}
+
+/* For small devices */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1rem;  /* Adjust font size */
+    }
+
+    .menu-icon {
+        font-size: 1.2rem;  /* Adjust icon size */
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #45a049;  
+    color: #fff;  
+    padding: 20px 0;  
+    text-align: center; 
+    position: relative; 
+    width: 100%;  
+    margin-top: 20px;  
+}
+
+.footer-container {
+    max-width: 1070px; 
+    margin: 0 auto;  
+    padding: 0 20px;  
+}
+
+.footer-info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    font-size: 1rem; 
+    margin: 5px 0;  
+}

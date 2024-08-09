@@ -1,0 +1,135 @@
+#welcome-image {
+    width: 100%;  
+    position: relative;  
+    overflow: hidden; 
+    margin-top: 10px;
+    display: flex; 
+    justify-content: center;  
+    align-items: center; 
+    background-color: #f9f9f9; 
+}
+
+/* Background image styles */
+.bg-1 {
+    width: 66%; 
+    max-height: 665px; 
+    object-fit: cover;  /* Cover the entire area while maintaining aspect ratio */
+}
+
+/* Main content styling */
+.home-page {
+    max-width: 1070px;
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}
+
+/* Main offer styling */
+.home-offer {
+    max-width: 1070px;  
+    margin: 20px auto;  
+    padding: 20px;
+    background-color: #f9f9f9;  
+    border-radius: 10px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Align the "What we offer" images to the left */
+.offer-image {
+    display: block; 
+    margin-left: 0;  
+    margin-right: auto; 
+}
+
+
+
+
+/* Product Page */
+
+
+/* Section styles for product images */
+section {
+    margin-bottom: 20px; 
+}
+
+section img {
+    width: 100%; 
+    max-width: 300px;  
+    height: auto;  
+    display: block;  
+    margin: 0 auto 20px auto;  
+    border-radius: 10px;  
+}
+
+/* Product section styles */
+.product-container {
+    display: flex; 
+    flex-wrap: wrap;  
+    gap: 20px; 
+    justify-content: space-between;  
+}
+
+.product-card {
+    background-color: #fff;  
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;  
+    text-align: center; 
+    width: calc(20% - 20px);  
+    min-width: 200px; 
+    flex: 1;
+}
+
+/* Product image styles */
+.product-card img {
+    width: 100%;  
+    height: auto;  
+    border-bottom: 1px solid #ddd;  
+}
+
+/* Product info styles */
+.product-info {
+    padding: 15px;  
+}
+
+.product-info h4 {
+    font-size: 1.2rem;  
+    color: #333; 
+    margin: 10px 0;  
+}
+
+.product-info p {
+    font-size: 1rem;  
+    color: #666;  
+    margin: 5px 0; 
+}
+
+/* Add button styles */
+.product-info button {
+    background-color: green;  
+    color: #fff;  
+    border: none; 
+    padding: 10px 20px;  
+    margin-bottom: 20px;  
+    cursor: pointer; 
+    border-radius: 4px;  
+    font-size: 1rem;  
+    transition: background-color 0.3s;  
+}
+
+.product-info button:hover {
+    background-color: darkgreen;
+}
+
+.product-info button a {
+    color: #fff;  
+    text-decoration: none;  
+}
+
+/* Today's Deals image  */
+#td-image {
+    height: 250px; 
+}
